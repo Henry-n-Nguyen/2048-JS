@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <title>2048 JS Game</title>
+    <link rel="icon" href="./2048_logo.png" type="image/png">
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main body -->
+    <div class="container">
+      <div class="grid">
+        <canvas id="board" class="game-board"></canvas>
+        <!-- <button onclick="play()" class="play-button">Play</button> -->
+        <div>
+          <div style="margin-bottom: 10px; display: flex; flex-direction: row; justify-content: space-between">
+            <button onclick="turnLeft()" class="play-button" style="background-color: white; width: 23%">Left</button>
+            <button onclick="turnUp()" class="play-button" style="background-color: white; width: 23%">Up</button>
+            <button onclick="turnDown()" class="play-button" style="background-color: white; width: 23%">Down</button>
+            <button onclick="turnRight()" class="play-button" style="background-color: white; width: 23%">Right</button>
+          </div>
+          <button onclick="start()" class="play-button" style="width: 100%">Play</button>
+        </div>
+        <!-- Row 1 --> 
+        <div>
+          <p class="play-block"></p>
+          <p class="play-block"></p>
+          <p class="play-block"></p>
+          <p class="play-block"></p>
+          <p class="play-block"></p>
+          <p class="play-block"></p>
+        </div>
+
+        <!-- Row 2 --> 
+        <div>
+          <p class="play-block"></p>
+          <p class="play-block"></p>
+          <p class="play-block"></p>
+          <p class="play-block"></p>
+          <p class="play-block"></p>
+          <p class="play-block"></p>
+        </div>
+
+        <!-- Row 3 -->
+        <div>
+          <p class="play-block"></p>
+          <p class="play-block"></p>
+          <p class="play-block"></p>
+          <p class="play-block"></p>
+          <p class="play-block"></p>
+          <p class="play-block"></p>
+        </div>
+
+        <!-- Row 4 -->
+        <div>
+          <p class="play-block"></p>
+          <p class="play-block"></p>
+          <p class="play-block"></p>
+          <p class="play-block"></p>
+          <p class="play-block"></p>
+          <p class="play-block"></p>
+        </div>
+
+        <!-- Row 5 -->
+        <div>
+          <p class="play-block"></p>
+          <p class="play-block"></p>
+          <p class="play-block"></p>
+          <p class="play-block"></p>
+          <p class="play-block"></p>
+          <p class="play-block"></p>
+        </div>
+
+        <!-- Row 6 -->
+        <div>
+          <p class="play-block"></p>
+          <p class="play-block"></p>
+          <p class="play-block"></p>
+          <p class="play-block"></p>
+          <p class="play-block"></p>
+          <p class="play-block"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Js function -->
+    <script type="text/javascript" src="./js/constants.js"></script>
+    <script type="text/javascript" src="./js/board.js"></script>
+    <script type="text/javascript" src="./js/piece.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>
